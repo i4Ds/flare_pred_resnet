@@ -12,12 +12,9 @@ As the dataset has 10 different SDO channels, we were able to investigate predic
 #### Training on the one or multiple channels
 
 
-##### Credit: Jonathan Donzallaz
-
 Create cofiguration file \<filename\>.yaml with needed settings in the config/experiment folder and then run:
  ```
-
-python main.py train +experiment=<filename>.yaml
+python main.py --config_path "<config_path>/<filename>.yaml" --task "train"
 
 ```
  
