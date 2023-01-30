@@ -21,12 +21,11 @@ python main.py --config_path "<config_path>/<filename>.yaml" --task "train"
 ### How to run testing process
  
 #### Testing the model
- 
-##### Credit: Jonathan Donzallaz
+
 
  
  ```
- python main.py test +experiment=<filename>.yaml
+ python main.py --config_path "<config_path>/<filename>.yaml" --task "test"
  ```
  
  #### Testing performance of the models aggregation by summing models outputs
