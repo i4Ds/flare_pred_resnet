@@ -11,7 +11,7 @@ Solar flare prediction is a major topic in space weather forecasting. In the las
 
 Create cofiguration file \<filename\>.yaml with needed settings in the config/experiment folder and then run:
  ```
-python main.py --config_path "<config_path>/<filename>.yaml" --task "train"
+python solarnet/main.py --config_path "<config_path>/<filename>.yaml" --task "train"
 
 ```
  
@@ -22,7 +22,7 @@ python main.py --config_path "<config_path>/<filename>.yaml" --task "train"
 
  
  ```
- python main.py --config_path "<config_path>/<filename>.yaml" --task "test"
+ python solarnet/main.py --config_path "<config_path>/<filename>.yaml" --task "test"
  ```
  
  #### Testing performance of the models with outputs aggregation
@@ -31,7 +31,7 @@ python main.py --config_path "<config_path>/<filename>.yaml" --task "train"
 Create cofiguration file \<filename\>.yaml in the config/experiment folder with needed settings and paths to the models to be tested and then run:
  
  ```
- python main.py --config_path "<config_path>/<filename>.yaml" --task "test_multi"
+ python solarnet/main.py --config_path "<config_path>/<filename>.yaml" --task "test_multi"
  ```
  
  Type of aggregation should be specified in the config file
