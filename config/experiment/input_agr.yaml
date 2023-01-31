@@ -1,7 +1,7 @@
 data:
   name: sdo-benchmark
   validation_size: 0.1
-  channel: magnetogram
+  channel: [magnetogram, 94, 211, continuum, 1700]
   size: 256
   targets:
     classes:
@@ -11,6 +11,8 @@ data:
   path: /Users/yanashtyk/Downloads/SDOBenchmark-data-full
 type: one
 is_train: false
+seed: 42
+split_type: bal
 
 
 
@@ -29,14 +31,15 @@ trainer:
   batch_size: 128
 
 name: Baseline binary classification model
-training_type: train  # train, finetune, ssl
+training_type: train # train, finetune, ssl
 tune_lr: false
 tracking: false
-path: /Users/yanashtyk/Documents/models_resnet/magn_new_adam1
+path:  /Users/yanashtyk/Documents/models_resnet/magn_94_211_cont_1700_seed74
 
-optimizer_type: Adam
+
+optimizer_type: SGD
 type_class: 1
 
 system:
   gpus: 0
-  workers: 4
+  workers: 8

@@ -122,7 +122,7 @@ def test_new(parameters: dict, verbose: bool = False):
 
     metrics = {"accuracy: ": accuracy, "precision": precision, "recall": recall, "balanced_accuracy": raw_metrics.pop("test_recall"), **stats_metrics(tp, fp, tn, fn)}
 
-    write_yaml(path_metrics_save / 'metrics_update_sum_magn_94_193_211_cont_1700_171.yaml', metrics)
+    #write_yaml(path_metrics_save / 'metrics_update_sum_magn_94_193_211_cont_1700_171.yaml', metrics)
     y = []
     y_proba = []
     y_pred = []

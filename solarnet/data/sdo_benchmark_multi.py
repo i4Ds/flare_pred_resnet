@@ -61,8 +61,7 @@ class SDOBenchmarkDataset_multi(BaseDataset):
 
             dict_path={}
             fl=True
-            count_x_flares = 0
-            count_m_flares = 0
+
             for channel in self.channel:
                 paths: List[Path] = []
                 for time_step in self.time_steps:
@@ -73,10 +72,7 @@ class SDOBenchmarkDataset_multi(BaseDataset):
                     dict_path[channel]=paths
                 if not all((self.root_folder / path).exists() for path in paths):
                     fl=False
-                    if target >= 1e-4:
-                        count_x_flares +=1
-                    elif target >= 1e-5:
-                        count_m_flares +=1
+
 
 
             if fl:
@@ -84,7 +80,7 @@ class SDOBenchmarkDataset_multi(BaseDataset):
 
         self.ls = ls
 
-        print('miss X: {}, miss M :{}'.format(count_x_flares, count_m_flares))
+
 
 
     def __len__(self) -> int:

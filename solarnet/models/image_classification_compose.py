@@ -97,7 +97,7 @@ class ImageClassification_combine(BaseModel):
 
                 count+=1
             num_maj= int(len(list(self.models_dict.keys()))/2) + 1
-            y_res_bin = (y_res>num_maj).int()
+            y_res_bin = (y_res>=num_maj).int()
 
             return y_res_bin
 

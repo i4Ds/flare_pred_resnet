@@ -16,7 +16,7 @@ from solarnet.tasks.train_multi_deep import train_multi_deep
 from solarnet.tasks.test_multi_deep import test_multi_deep
 
 parser = argparse.ArgumentParser(description="...")
-parser.add_argument("--config_path", default="/Users/yanashtyk/Documents/GitHub/ResNet/config/experiment/resnet_deep.yaml", type=str, help="The config file path")
+parser.add_argument("--config_path", default="/Users/yanashtyk/Documents/GitHub/flare_pred_resnet/config/experiment/resnet_deep.yaml", type=str, help="The config file path")
 parser.add_argument('--task', default='train', type = str, help = 'Type of task (train , train_multi_deep, test, test_multi) ')
 args = parser.parse_args()
 
