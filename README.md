@@ -34,7 +34,7 @@ Create cofiguration file \<filename\>.yaml in the config/experiment folder with 
  python solarnet/main.py --config_path "<config_path>/<filename>.yaml" --task "test_multi"
  ```
  
- Type of aggregation should be specified in the config file
+ Type of aggregation should be specified in the configuration file
  
  ### Reproducibility of the results
  Pretrained weights of the models can be downladed from [here](https://drive.google.com/drive/u/0/folders/1BVJRjiCydCIi-oLCZsBIOWrVNnzagmz2). They can be used to reproduce the results.
