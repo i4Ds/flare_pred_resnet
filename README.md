@@ -1,11 +1,8 @@
-# ResNet
+# Solar flare prediction using multiple SDO channels
  Authors: Yana Shtyk, Olga Taran, André Csillaghy, Jonathan Donzallaz
  
  
-The work addresses the problem of prediction of solar flares. To research this problem a machine learning technique called recurrent neural network was used.
-We trained and tested our model on the SDOBenchmark dataset.  It is a time series dataset created by FHNW. 
-It consists  of images of active regions cropped from SDO data. 
-As the dataset has 10 different SDO channels, we were able to investigate prediction capabilities of all of them. Best TSS of 0.64 was obtained using a magnetogram. Furthermore, we found out that channel aggregation can help to improve prediction capabilities of the model. Using this technique we managed to achieve TSS of 0.7.
+Solar flare prediction is a major topic in space weather forecasting. In the last decade, this problem attracted an increased research interest due to the availability of large amounts of observational data as well as promising achievements in the field of machine learning. Deep learning is actively used in the recent state-of-the-art solar flare prediction approaches. However, the majority of previous attempts are based only on SDO/HMI magnetograms, while the capabilities of SDO/AIA data channels have been less studied. In this work, we aim at investigating the predictive capabilities of the SDO/AIA channels, individually as well as combined, along with the "traditional" HMI channels. More particularly, we focus on the data available in the SDOBenchmark data set that consists of SDO images of active regions, cropped from the full-sun originals. Using the multi-channel nature of the SDOBenchmark data set, we propose and analyse (i) an \sRN{} trained independently on the different data channels, (ii) an \mRNa{} that combines different data channels, and (iii) a \sRNia{} that also combines the different data channels. All proposed frameworks make the binary prediction for $\ge$ C1.0-class within the following 24 hours. The obtained results show that, without a doubt, the HMI magnetogram give the highest true skill score. Nevertheless, the \sRN{} trained additionally on the AIA 94 and 193 channels outperform many relevant state-of-the-art approaches. Moreover, the joint use of different data channels in  the \mRNa{} allows to improve the best true skill score achieved by the HMI magnetograms alone. 
 
 ### How to run training process
 
