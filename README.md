@@ -6,7 +6,7 @@ Solar flare prediction is a major topic in space weather forecasting. In the las
 
 ### How to run training process
 
-#### Training on the one or multiple channels
+#### Training on the one or multiple SDO channels
 
 
 Create cofiguration file \<filename\>.yaml with needed settings in the config/experiment folder and then run:
